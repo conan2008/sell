@@ -50,14 +50,14 @@ public class ProductServiceImplTest {
     @Test
     public void save() throws Exception {
         ProductInfo info = new ProductInfo();
-        info.setProductId("123457");
-        info.setProductName("大螃蟹");
-        info.setProductPrice(new BigDecimal(54.5));
+        info.setProductId("123458");
+        info.setProductName("熊本日本料理");
+        info.setProductPrice(new BigDecimal(42.5));
         info.setProductStock(100);
-        info.setProductDescription("好吃的大闸蟹");
+        info.setProductDescription("新街口最棒日料店");
         info.setProductIcon("http://xxx.jpg");
         info.setProductStatus(ProductStatusEnum.DOWN.getCode());
-        info.setCategoryType(11);
+        info.setCategoryType(2);
         ProductInfo result = service.save(info);
         Assert.assertNotNull(result);
     }
